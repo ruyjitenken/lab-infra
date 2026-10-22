@@ -398,5 +398,101 @@ Fin mois 24	AI-102 ✅ + poste ingénieur cloud/IA ou société qui tourne
 
 ## Semaine par Semaine 
 
+1 er Mois : 
 
+🗓️ Plan détaillé : Mois 1 – Semaine par semaine
+Objectif du mois : Reprendre les bases Linux de manière structurée pour préparer la LFCS, et mettre en place ton lab.
+
+Semaine 1 : Mise en place de l’environnement et fondamentaux
+Tâches techniques :
+
+Installe un hyperviseur sur ta machine principale. Proxmox VE est idéal, mais VirtualBox ou VMware Workstation Player feront l’affaire pour commencer.
+
+Crée deux machines virtuelles :
+
+Une Debian (ta distribution de prédilection).
+
+Une Ubuntu Server (très utilisée en entreprise et supportée par la LFCS).
+
+Configure un accès SSH durci sur ces deux VM : connexion par clé uniquement, désactive l’accès root direct, et installe fail2ban.
+
+Crée ton dépôt GitHub lab-infra et écris un README.md qui décrit ton projet et ta roadmap.
+
+Formation (1h/jour) :
+
+Cours LinkedIn Learning : “Learning Linux Command Line” de Scott Simpson. C’est la base absolue pour être à l’aise avec le terminal. Même si tu connais, c’est une bonne révision structurée.
+
+Livrable de la semaine : Deux VM (Debian + Ubuntu) accessibles en SSH, et le dépôt lab-infra initialisé.
+
+Semaine 2 : Gestion des utilisateurs, des permissions et des processus
+Tâches techniques :
+
+Sur tes VM, crée des utilisateurs et des groupes. Teste les permissions de fichiers (chmod, chown, setfacl).
+
+Apprends à gérer les processus : ps, top, htop, kill, systemctl pour gérer les services.
+
+Planifie des tâches avec cron et systemd timers.
+
+Formation (1h/jour) :
+
+Cours LinkedIn Learning : “Linux Foundation Cert Prep: Essential Commands (Ubuntu)” par KodeKloud. Ce cours est spécifiquement conçu pour la LFCS. Commence par les modules sur les utilisateurs, les groupes et les permissions.
+
+Livrable de la semaine : Un document (ou un fichier Markdown dans ton repo) qui liste les commandes essentielles que tu as apprises et comment tu les as utilisées.
+
+Semaine 3 : Réseau et stockage sous Linux
+Tâches techniques :
+
+Configure le réseau de tes VM : adresses IP statiques, configuration DNS.
+
+Apprends à utiliser ip, ss, ping, traceroute.
+
+Configure un pare-feu simple avec ufw ou nftables.
+
+Ajoute un disque virtuel à une VM, crée une partition, formate-la, et monte-la. Explore LVM (Logical Volume Manager).
+
+Formation (1h/jour) :
+
+Cours LinkedIn Learning : Continue le cours “Linux Foundation Cert Prep: Essential Commands” sur les modules “Networking” et “Storage”.
+
+Lecture : Cherche la documentation officielle de la LFCS pour la version actuelle de l’examen et note les sujets couverts.
+
+Livrable de la semaine : Tes VM avec une configuration réseau statique et un nouveau disque monté. Documente la procédure dans ton repo.
+
+Semaine 4 : Sécurité et préparation à l’examen
+Tâches techniques :
+
+Approfondis la sécurité : configure AppArmor ou SELinux (notions).
+
+Mets en place une sauvegarde simple avec rsync ou tar.
+
+Explore les conteneurs : installe Docker et lance un conteneur simple.
+
+Formation (1h/jour) :
+
+Cours LinkedIn Learning : “LFCS Exam Prep: Managing Security” est une excellente suite pour couvrir la sécurité de l’examen.
+
+Pratique : Commence à faire des examens blancs de la LFCS. Le cours de KodeKloud sur LinkedIn Learning est réputé pour ses labs pratiques et ses mock exams.
+
+Livrable de la semaine : Un script de sauvegarde fonctionnel sur ta VM Debian, et une première note sur ton score aux examens blancs.
+
+📚 Recommandations de cours LinkedIn Learning
+Voici les cours précis que je te recommande pour les premiers mois, tous disponibles sur LinkedIn Learning :
+
+Pour la LFCS (Mois 1 à 3) :
+
+“Linux Foundation Cert Prep: Essential Commands (Ubuntu)” par KodeKloud. C’est le cours de référence pour l’examen.
+
+“LFCS Exam Prep: Managing Security” par KodeKloud. Couvre la partie sécurité de l’examen.
+
+Pour Ansible (Mois 3) :
+
+“Ansible Essential Training” par Anthony Sequeira. Un cours complet qui couvre les inventaires, playbooks, rôles, templates et Vault.
+
+“Learning Ansible” par Greg Sowell. Une excellente introduction pour les administrateurs système.
+
+Pour Azure (Mois 4 à 6) :
+
+“Microsoft Azure Fundamentals (AZ-900) Cert Prep” par Microsoft Press. Un parcours de 4 cours qui couvre tous les objectifs de l’examen AZ-900.
+
+“Microsoft Azure Administrator Associate (AZ-104) Cert Prep” par Microsoft Press. Le cours officiel pour préparer l’examen AZ-104, couvrant les réseaux virtuels, le stockage, le calcul, l’identité et la gouvernance.
 

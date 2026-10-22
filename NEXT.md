@@ -11,3 +11,6 @@ Jour 2 — Sécurisation SSH
 
 ## Questions ouvertes
 - (à remplir)
+
+## Prochaine session
+Jour 3 — Mise à jour système + utilisateurs/groupes + permissions

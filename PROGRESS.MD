@@ -14,3 +14,10 @@
 - Windows/AD : barre horizontale, module complet mois 7
 - BDD : PostgreSQL priorité, MySQL acquis, pgvector mois 12
 - IA : accélérateur, pas pilier
+
+## Semaine 1 (suite)
+- [x] Clé SSH ed25519 générée (PC perso)
+- [x] Clé publique copiée sur debian-lab-01
+- [x] PasswordAuthentication no
+- [x] PermitRootLogin no
+- [x] fail2ban installé et actif
