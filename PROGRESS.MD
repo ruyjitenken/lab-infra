@@ -21,3 +21,15 @@
 - [x] PasswordAuthentication no
 - [x] PermitRootLogin no
 - [x] fail2ban installé et actif
+
+- [x] Clé SSH ed25519 (PC perso = raspberrypi)
+- [x] /etc/ssh/sshd_config.d/01-custom.conf : PermitRootLogin no, PasswordAuthentication no, AllowUsers terry
+- [x] fail2ban actif
+- [x] Test : root refusé (publickey), terry accepté par clé
+
+## Semaine 1 (fin)
+- [x] Système à jour (apt full-upgrade)
+- [x] LVM : VG delalily-vg avec /, /var, /tmp, /home, swap (hérité de l'install Debian)
+- [x] /home/terry en 700, umask 022, terry dans sudo
+- Note : VG nommée delalily-vg (cosmétique, à renommer plus tard si besoin)
+

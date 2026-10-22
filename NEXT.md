@@ -14,3 +14,10 @@ Jour 2 — Sécurisation SSH
 
 ## Prochaine session
 Jour 3 — Mise à jour système + utilisateurs/groupes + permissions
+
+## Prochaine session
+Jour 3+4 (rapide) — validation : mises à jour, users/permissions, LVM
+
+## Prochaine session
+Jour 5 — Ansible (débutant : jamais touché)
+Objectif : installer, inventaire, premier ping, premier playbook
