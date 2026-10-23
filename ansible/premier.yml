@@ -1,0 +1,25 @@
+---
+- name: Premier playbook - etat de base
+  hosts: lab
+  become: true
+
+  tasks:
+    - name: S'assurer que curl est installe
+      ansible.builtin.apt:
+        name: curl
+        state: present
+        update_cache: true
+
+    - name: S'assurer que le service cron tourne
+      ansible.builtin.service:
+        name: cron
+        state: started
+        enabled: true
+
+    - name: Creer un fichier de test
+      ansible.builtin.copy:
+        content: "Ansible a configure cette machine\n"
+        dest: /etc/ansible-test.txt
+        owner: root
+        group: root
+        mode: '0644'

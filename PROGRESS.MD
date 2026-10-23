@@ -33,3 +33,12 @@
 - [x] /home/terry en 700, umask 022, terry dans sudo
 - Note : VG nommée delalily-vg (cosmétique, à renommer plus tard si besoin)
 
+- [x] VM2 : ubuntu-lab-02 (192.168.1.15) — user terry + sudo + clé SSH
+- [x] lary = user install (groupes par défaut), non utilisé pour Ansible
+- [x] Ansible ping OK vers ubuntu-lab-02
+- [x] Cause timeout : sudo-rs (Ubuntu 25.10+) ≠ prompt Ansible
+- [x] Fix : ansible_become_exe=/usr/bin/sudo.ws dans inventory.ini
+- [x] Playbook premier.yml : curl, cron, fichier test
+- [x] 1ère exécution : changed=1
+- [X] 2ᵉ exécution : changed=0 (idempotence à confirmer)
+- [x] Fix sudo-rs : ansible_become_exe=/usr/bin/sudo.ws
