@@ -1,5 +1,5 @@
 ---
-test_file_content: "Ansible a configure cette machine\n"
+test_file_content: "Version 2 - Ansible a configure cette machine\n"
 packages:
   - curl
   - htop
