@@ -1,0 +1,5 @@
+---
+test_file_content: "Ansible a configure cette machine\n"
+packages:
+  - curl
+  - htop

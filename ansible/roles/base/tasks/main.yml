@@ -1,0 +1,19 @@
+---
+- name: Installer les paquets de base
+  ansible.builtin.apt:
+    name: "{{ packages }}"
+    state: present
+    update_cache: true
+
+- name: S'assurer que cron tourne
+  ansible.builtin.service:
+    name: cron
+    state: started
+    enabled: true
+
+- name: Déployer le fichier de test
+  ansible.builtin.copy:
+    content: "{{ test_file_content }}"
+    dest: /etc/ansible-test.txt
+    mode: '0644'
+  notify: Test handler

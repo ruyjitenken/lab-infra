@@ -1,0 +1,6 @@
+---
+- name: Configuration de base
+  hosts: lab
+  become: true
+  roles:
+    - base

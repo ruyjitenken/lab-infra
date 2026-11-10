@@ -1,0 +1,4 @@
+---
+- name: Test handler
+  ansible.builtin.debug:
+    msg: "Handler déclenché car le fichier a changé"
