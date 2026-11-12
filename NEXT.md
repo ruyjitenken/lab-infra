@@ -27,3 +27,6 @@ Jour 3+4 (rapide) — validation : mises à jour, users/permissions, LVM
 
 ## Prochaine session
 Jour 6 — Rôles Ansible, variables, handlers, templates
+
+## Prochaine session
+Jour 7 — Templates Jinja2 (vrai cas : config avec variables)
