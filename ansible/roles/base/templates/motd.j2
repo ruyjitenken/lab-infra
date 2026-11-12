@@ -1,0 +1,5 @@
+Bienvenue sur {{ inventory_hostname }}
+OS : {{ ansible_distribution }} {{ ansible_distribution_version }}
+IP  : {{ ansible_default_ipv4.address }}
+User admin : {{ admin_user }}
+Déployé par Ansible le {{ ansible_date_time.date }}
