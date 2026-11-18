@@ -20,3 +20,8 @@
     src: motd.j2
     dest: /etc/motd
     mode: '0644'
+- name: Déployer la démo secret (sans révéler)
+  ansible.builtin.template:
+    src: secret-demo.j2
+    dest: /etc/secret-demo.txt
+    mode: '0600'
